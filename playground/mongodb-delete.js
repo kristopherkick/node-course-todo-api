@@ -11,11 +11,11 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   // db.collection('Todos').deleteMany({text: 'Create an API'}).then((result) => {
   //   console.log(result);
   // });
-  db.collection('Users').deleteOne({
-    _id: new ObjectID('5b1ff88cda4b001b0ce85f36')
-  }).then((result) => {
-    console.log(result);
-  });
+  // db.collection('Users').deleteOne({
+  //   name: 'Kris'
+  // }).then((result) => {
+  //   console.log(result);
+  // });
 
   // deleteOne
   // db.collection('Todos').deleteOne({text: 'Create an API'}).then((result) => {
@@ -27,9 +27,9 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   //   console.log(result);
   // });
   // db.collection('Users').findOneAndDelete({
-  //   name: 'Kris'
+  //   _id: new ObjectID('5b1ff88cda4b001b0ce85f36')
   // }).then((result) => {
-  //   console.log(result);
+  //   console.log(JSON.stringify(result, undefined, 2));
   // });
 
   // db.close();
